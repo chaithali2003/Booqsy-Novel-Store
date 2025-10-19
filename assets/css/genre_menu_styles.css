@@ -1,0 +1,116 @@
+/* Genre Dropdown */
+.nav-item.dropdown .dropdown-menu {
+    width: 650px; /* Slightly wider for better spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(117, 74, 127, 0.2);
+    padding: 15px; /* Added padding to container */
+    border-top: 3px solid #754a7f;
+}
+
+/* Remove blue highlight */
+.nav-link.dropdown-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* Genre items container */
+.genre-group {
+    padding: 0.5rem 0.75rem; /* Adjusted padding */
+}
+
+.genre-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem; /* Increased padding */
+    margin: 0.25rem 0;
+    color: #4a2a50;
+    text-decoration: none;
+    border-radius: 6px; /* Slightly larger radius */
+    transition: all 0.2s ease;
+}
+
+.genre-item:hover {
+    width: 150px;
+    background-color: #f5f0f7;
+    color: #754a7f;
+}
+
+/* Icon circle - now more visible */
+.genre-icon {
+    width: 32px; /* Increased size */
+    height: 32px;
+    background-color: rgba(117, 74, 127, 0.1); /* More visible background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.genre-icon i {
+    color: #754a7f;
+    font-size: 0.9rem; /* Slightly larger icon */
+}
+
+.genre-name {
+    font-size: 0.95rem; /* Slightly larger text */
+    font-weight: 500;
+    flex: 1;
+    min-width: 0; /* Prevents overflow */
+}
+
+/* Right side spacing correction */
+.genre-dropdown .row {
+    margin-right: -5px; /* Removes extra right spacing */
+    margin-left: -5px;
+}
+
+.genre-dropdown .col-md-3 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-item.dropdown .dropdown-menu {
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 10px;
+    }
+    
+    .genre-group {
+        padding: 0.5rem;
+    }
+    
+    .genre-item {
+        padding: 0.75rem;
+    }
+    
+    .genre-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .genre-item {
+        padding: 0.6rem;
+    }
+    
+    .genre-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 0.5rem;
+    }
+}

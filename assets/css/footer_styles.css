@@ -1,0 +1,140 @@
+/* Footer Styles */
+.site-footer {
+    background-color: #4a2a50; /* Dark purple background */
+    color: #e8e0e9; /* Light purple text */
+    padding: 3rem 0 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-footer a {
+    color: #d0c4d3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.footer-column h5 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-column h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #754a7f;
+}
+
+.footer-column p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.6rem;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.contact-item i {
+    color: #754a7f;
+    margin-right: 0.8rem;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    min-width: 16px;
+}
+
+.contact-item span {
+    font-size: 0.95rem;
+    color: #d0c4d3;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover span {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-item {
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact-item i {
+        font-size: 0.9rem;
+        margin-right: 0.7rem;
+    }
+    
+    .contact-item span {
+        font-size: 0.9rem;
+    }
+}
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #5d3a66;
+    font-size: 0.95rem;
+    color: #b8a9bd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-column {
+        flex: 0 0 100%;
+    }
+    
+    .site-footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-content {
+        margin-bottom: 1.5rem;
+    }
+}

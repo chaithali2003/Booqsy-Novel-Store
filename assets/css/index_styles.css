@@ -1,0 +1,177 @@
+body {
+    padding-top: 120px;
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 120px;
+    }
+}
+
+/* Navbar */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #f6f2f7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+    font-family: 'farabee-black';
+    src: url('Farabee Straight Black.ttf');
+}
+
+.blade-animate {
+    font-family: 'farabee-black', sans-serif;
+    background: linear-gradient(140deg,
+            #754a7f 0%,
+            #754a7f 35%,
+            #ffffff 50%,
+            #754a7f 65%,
+            #754a7f 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bladeMoveRTL 2s linear infinite;
+}
+
+@keyframes bladeMoveRTL {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+}
+
+.search-form {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding-right: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #754a7f;
+}
+
+.icon-group a {
+    font-size: 1.25rem;
+    color: #754a7f !important;
+}
+
+/* Menu */
+.bg-basic {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #754a7f !important;
+    box-shadow:
+        0 0 8px #754a7f,
+        0 0 16px #754a7f,
+        0 0 24px rgba(117, 74, 127, 0.6),
+        0 0 32px rgba(117, 74, 127, 0.4);
+    z-index: 1020;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link:active,
+.nav-link:focus {
+    background: linear-gradient(to right, #b678d4, #c28ade, #dabaef) !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(rgba(117, 74, 127, 0.6), rgba(117, 74, 127, 0.6)), url('../images/home-bg.png') no-repeat center/cover;
+    background-size: cover;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'foxlite';
+    src: url('Foxlite\ Script.otf');
+}
+
+.hero-section h2 {
+    font-family: 'foxlite';
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.carousel-inner {
+    padding: 30px;
+}
+
+.book-cover {
+    height: 270px;
+    width: 180px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 0px 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.578);
+    transition: transform 0.5s ease !important;
+}
+
+.book-cover:hover {
+    transform: scale(1.1) rotate(0deg);
+    z-index: 10;
+}
+
+.carousel-item .book-cover {
+    transition: transform 0.5s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #754a7f;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* Features */
+.features {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features i {
+    font-size: 30px;
+    color: #754a7f;
+}
+
